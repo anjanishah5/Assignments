@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Anjani Shah</h1>
+<h2>The cloneNode() Method</h2>
+
+<button onclick="myFunction()">Copy</button>
+<p>Click "Copy" to copy an item from one list to another.</p>
+
+<ul id="myList1"><li>Hi</li><li>How are you?</li></ul>
+<ul id="myList2"><li>Hello</li><li>Letsupgrade</li></ul>
+
+<script>
+function myFunction() {
+  const node = document.getElementById("myList2").lastChild;
+  const clone = node.cloneNode(true);
+  document.getElementById("myList1").appendChild(clone);
+}
+</script>
+
+</body>
+</html>
